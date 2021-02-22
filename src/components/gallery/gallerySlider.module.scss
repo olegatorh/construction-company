@@ -1,0 +1,31 @@
+
+.gallerySlider{
+  padding: 50px;
+  max-height: 600px;
+
+}
+
+
+.slide_number {
+  font-size: 45px;
+  line-height: 45px;
+  color: #BDBDBD;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide:focus{
+  outline: none;
+}
+
+.gallerySliderControlls{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 150px;
+  padding-right: 150px;
+}
