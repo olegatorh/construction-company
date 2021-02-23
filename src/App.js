@@ -9,6 +9,9 @@ import Gallery from "./components/gallery/galleryPage";
 function App() {
     return (
         <>
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;600;800&display=swap');
+            </style>
             <Header/>
             <Switch>
                 <Route exact path={'/'} component={MainContent}/>

@@ -3,7 +3,7 @@ import ProjectCard from "./cartProject";
 function Projects() {
     return(
         <>
-                <section className="intro">
+                <section className="pageProperties">
                     <div className="wrapper">
                         <h1 className="intro_first_title">OUR</h1>
                         <h1 className="intro_second_title">PROJECTS</h1>

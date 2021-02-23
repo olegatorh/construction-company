@@ -46,8 +46,7 @@ export const ContactWithUs = () => {
                        onChange={(e) => setText(e.target.value)} />
                 <label htmlFor="Message" className={styles.form__label}>Message</label>
             </div>
-
-            <input type='submit' value='Send →' className={`${styles.btn} projects_title_all_projects`}/>
+            <input type='submit' value='Send →' className={`${styles.btn} ${styles.projects_title_all_projects}`}/>
         </form>
     )
 }

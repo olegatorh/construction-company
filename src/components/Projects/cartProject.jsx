@@ -1,12 +1,11 @@
 import React, {Component} from 'react'
 import axios from 'axios'
 import ReactPaginate from 'react-paginate';
-import styles from "./style.module.css";
+import styles from "./projectPages.module.css";
 import arrow from "../../img/arrow-2-right-long.png";
-import {dataForTest} from "./dataForTesting";
+import {dataForTest} from "../../dataForTesting";
 import right_arrow from "../../img/icons/right_arrow.png"
 import left_arrow from "../../img/icons/left_arrow.png"
-
 
 
 export default class App extends Component {
@@ -23,7 +22,7 @@ export default class App extends Component {
             .bind(this);
     }
     receivedData() {
-                const slice = dataForTest.slice(this.state.offset, this.state.offset + this.state.perPage)
+                const slice = dataForTest.projects.slice(this.state.offset, this.state.offset + this.state.perPage)
                 const postData = slice.map((pd, index) => <div className={styles.projects_wrapper} key={index}>
                     <div className={styles.project_item}>
                         <img className={styles.project_title_image} src={pd.titleImg} alt="project image must be here"/>
@@ -41,7 +40,7 @@ export default class App extends Component {
                 </div>)
 
                 this.setState({
-                    pageCount: Math.ceil(dataForTest.length / this.state.perPage),
+                    pageCount: Math.ceil(dataForTest.projects.length / this.state.perPage),
 
                     postData
                 })
@@ -49,7 +48,7 @@ export default class App extends Component {
     handlePageClick = (e) => {
         const selectedPage = e.selected;
         const offset = selectedPage * this.state.perPage;
-
+        window.scrollTo(0, 0)
         this.setState({
             currentPage: selectedPage,
             offset: offset

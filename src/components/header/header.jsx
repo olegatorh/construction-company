@@ -1,33 +1,34 @@
 import header_logo_pic from "../../img/icons/header_logo_pic.png";
 import React from "react";
-import {Link, Route} from 'react-router-dom'
-import Contacts from "../Contacts/contacts";
+import styles from "./header.module.sass"
+import {Link} from 'react-router-dom'
+
 function Header() {
     return(
-        <header className="header">
+        <header className={styles.header}>
             <div className="wrapper">
-                <header className="header_wrapper">
-                    <div className="header-logo">
-                        <a href="/" className="header_logo-link">
-                            <img src={header_logo_pic} className="header_logo_pic" alt="Taras Enterprise"/>
+                <header className={styles.header_wrapper}>
+                    <div>
+                        <a href="/" className={styles.header_logo_link}>
+                            <img src={header_logo_pic} className={styles.header_logo_pic} alt="Taras Enterprise"/>
                         </a>
                     </div>
-                    <nav className="header_naw">
-                        <ul className="header_list">
-                            <li className="header_item">
-                                <Link className="header_link" to='/'>MAIN PAGE</Link>
+                    <nav>
+                        <ul className={styles.header_list}>
+                            <li className={styles.header_item}>
+                                <Link className={styles.header_link} to='/'>MAIN PAGE</Link>
                             </li>
-                            <li className="header_item">
-                                <Link className="header_link" to='/Gallery'>GALLERY</Link>
+                            <li className={styles.header_item}>
+                                <Link className={styles.header_link} to='/Gallery'>GALLERY</Link>
                             </li>
-                            <li className="header_item">
-                                <Link className="header_link" to='/Projects'>PROJECTS</Link>
+                            <li className={styles.header_item}>
+                                <Link className={styles.header_link} to='/Projects'>PROJECTS</Link>
                             </li>
-                            <li className="header_item">
-                                <a href="!#" className="header_link">CERTIFICATES</a>
+                            <li className={styles.header_item}>
+                                <a href="!#" className={styles.header_link}>CERTIFICATES</a>
                             </li>
-                            <li className="header_item">
-                                <Link className="header_link" to='/Contacts'>CONTACTS</Link>
+                            <li className={styles.header_item}>
+                                <Link className={styles.header_link} to='/Contacts'>CONTACTS</Link>
                             </li>
                         </ul>
                     </nav>

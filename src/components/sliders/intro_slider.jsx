@@ -25,7 +25,7 @@ export default class SimpleSlider extends Component {
                         <img src={sliderMainPic} alt="sliderMainPic"/>
                     </div>
                     <div>
-                        <img src={next} width={870} height={829} alt="sliderMainPic"/>
+                        <img src={next} alt="sliderMainPic"/>
 
                     </div>
                 </Slider>
