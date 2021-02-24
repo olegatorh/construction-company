@@ -25,7 +25,7 @@ function Header() {
                                 <Link className={styles.header_link} to='/Projects'>PROJECTS</Link>
                             </li>
                             <li className={styles.header_item}>
-                                <a href="!#" className={styles.header_link}>CERTIFICATES</a>
+                                <Link className={styles.header_link} to='/About_Company'>ABOUT COMPANY</Link>
                             </li>
                             <li className={styles.header_item}>
                                 <Link className={styles.header_link} to='/Contacts'>CONTACTS</Link>

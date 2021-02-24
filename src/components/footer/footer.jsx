@@ -5,6 +5,7 @@ import telegram from "../../img/icons/telegram.png";
 import telegramMini from "../../img/icons/telegramMini.png";
 
 import styles from "./footer.module.sass"
+import {Link} from "react-router-dom";
 
 function Footer() {
     return (
@@ -14,10 +15,18 @@ function Footer() {
 
                     <div>
                         <h1 className={styles.footer_title}>Information</h1>
-                        <li className={styles.footer_item}>Gallery</li>
-                        <li className={styles.footer_item}>Projects</li>
-                        <li className={styles.footer_item}>Certificates</li>
-                        <li className={styles.footer_item}>Contacts</li>
+                        <li className={styles.footer_item}>
+                            <Link to='/Gallery' className={styles.footerLink}>Gallery</Link>
+                        </li>
+                        <li className={styles.footer_item}>
+                            <Link to='/Projects' className={styles.footerLink}>Projects</Link>
+                        </li>
+                        <li className={styles.footer_item}>
+                            <Link to='/About_Company' className={styles.footerLink}>About Company</Link>
+                        </li>
+                        <li className={styles.footer_item}>
+                            <Link to='/Contacts' className={styles.footerLink}>Contacts</Link>
+                        </li>
                     </div>
                     <div>
                         <h1 className={styles.footer_title}>Contacts</h1>

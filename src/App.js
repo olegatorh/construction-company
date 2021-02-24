@@ -5,6 +5,7 @@ import {Route, Switch} from "react-router-dom"
 import Contacts from "./components/Contacts/contacts";
 import Projects from "./components/Projects/projects";
 import Gallery from "./components/gallery/galleryPage";
+import AboutCompany from "./components/aboutCompany/aboutCompany"
 
 function App() {
     return (
@@ -18,6 +19,7 @@ function App() {
                 <Route path={'/Gallery'} component={Gallery}/>
                 <Route path={'/Projects'} component={Projects}/>
                 <Route path={'/Contacts'} component={Contacts}/>
+                <Route path={'/About_Company'} component={AboutCompany}/>
             </Switch>
             <Footer/>
         </>

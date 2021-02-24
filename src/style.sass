@@ -132,3 +132,118 @@ hr
     min-height: 100vh
     padding-top: 100px
     width: 100%
+
+
+.link
+    text-decoration: none
+    color: rgb(51, 51, 51)
+
+.pagination
+    padding-top: 60px
+    display: flex
+    align-items: center
+    justify-content: space-around
+    outline: none
+
+    font-size: 45px
+    line-height: 45px
+    color: #BDBDBD
+
+
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus
+    color: #333333
+    border-color: #47ccde
+    outline: none
+
+
+
+
+@media screen and (max-width: 1200px)
+
+    .wrapper
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+
+
+        .intro_title
+            flex-direction: row
+            align-content: space-between
+            flex-wrap: wrap
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.slider
+    position: relative
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+
+
+.image
+    width: 1000px
+    height: 600px
+    border-radius: 10px
+
+
+.right-arrow
+    position: absolute
+    top: 50%
+    right: 32px
+    font-size: 3rem
+    color: #000
+    z-index: 10
+    cursor: pointer
+    user-select: none
+
+
+.left-arrow
+    position: absolute
+    top: 50%
+    left: 32px
+    font-size: 3rem
+    color: #000
+    z-index: 10
+    cursor: pointer
+    user-select: none
+
+.slide
+    opacity: 0
+    transition-duration: 1s
+
+
+.slide.active
+    opacity: 1
+    transition-duration: 1s
+    transform: scale(1.08)
+
+            
+
+
+

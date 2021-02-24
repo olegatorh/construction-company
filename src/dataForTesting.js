@@ -11,6 +11,8 @@ import slide5 from "./img/Projects gallery/Rectangle 27.png"
 import slide6 from "./img/Projects gallery/Rectangle 28.png"
 import slide7 from "./img/Projects gallery/Rectangle 29.png"
 import slide8 from "./img/Projects gallery/Rectangle 30.png"
+import intro from "./img/Intro.png"
+import intro2 from "./img/215112.jpg"
 
 export const dataForTest = {
     projects: [
@@ -123,6 +125,10 @@ export const dataForTest = {
         {img: slide8},
         {img: slide8},
 
+    ],
+    introSlider: [
+        {img: intro},
+        {img: intro2},
     ]
 }
 

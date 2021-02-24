@@ -1,6 +1,6 @@
 
 .header
-  position: fixed
+  position: relative //fixed
   top: 0
   left: 0
   width: 100%
@@ -55,3 +55,43 @@
 .header_link:hover, .header_link:focus, .header_link:active
   opacity: 75%
   text-decoration: overline underline
+
+
+@media screen and (max-width: 1200px)
+  .header_wrapper
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+    .header_list
+      padding-top: 30px
+      justify-content: center
+
+      .header_link
+        font-size: 30px
+        color: rgba(51, 51, 51, 1)
+        text-decoration: none
+
+
+
+
+@media screen and (max-width: 930px)
+  .header_list
+    padding-top: 30px
+    justify-content: center
+
+    .header_item
+      padding: 30px
+
+      .header_link
+        font-size: 40px
+        line-height: 25px
+        color: rgba(51, 51, 51, 1)
+        text-decoration: none
+
+
+@media screen and (max-width: 680px)
+  .header_list
+    padding-top: 30px
+    justify-content: center
+    flex-direction: column

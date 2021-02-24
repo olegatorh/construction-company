@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import Slider from "react-slick";
 import sliderMainPic from "../../img/Intro.png"
 import next from "../../img/215112.jpg"
+import styles from "./mainContent.module.sass"
 
 export default class SimpleSlider extends Component {
     render() {
@@ -11,10 +12,10 @@ export default class SimpleSlider extends Component {
             slidesToShow: 1,
             slidesToScroll: 1,
             arrows: false,
-            variableWidth: true,
-            adaptiveHeight: true,
             autoplay: true,
             autoplaySpeed: 3500,
+            variableWidth: true,
+            className: styles.slider
         };
         return (
                 <Slider {...settings} >
@@ -26,7 +27,6 @@ export default class SimpleSlider extends Component {
                     </div>
                     <div>
                         <img src={next} alt="sliderMainPic"/>
-
                     </div>
                 </Slider>
         );

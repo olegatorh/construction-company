@@ -1,28 +1,30 @@
 .intro
-  padding-top: 200px
+  padding-top: 50px
   height: 100vh
 
 .intro_title
-  float: left
-  max-width: 30%
-  padding-top: 30%
+  display: flex
+  justify-content: space-around
+  flex-wrap: wrap
+
+  .intro_text
+    align-self: center
+
+  .slider
+    width: 840px
+    height: 820px
+    max-height: 820px
+    border: 0 !important
+    outline: none
+    img
+      width: 840px
+      height: 820px
 
 
 
 
 
 
-.intro_slider
-  float: right
-  width: 770px
-  max-width: 70%
-  max-height: 820px
-  border: 0 !important
-  outline: none
-
-  img
-    width: 870px
-    height: 829px
 
 
 
@@ -159,10 +161,6 @@
 .our_projects_slider
   margin-top: 60px
 
-
-.slick-slide
-  margin-right: 10px
-
 .our_project_slide:hover .our_project_slide_text
   display: block
 
@@ -209,3 +207,15 @@ input
 .call_back_items
   margin-top: 50px
   display: flex
+
+
+@media screen and (max-width: 1202px)
+  .intro_slider
+    width: 100%
+
+
+@media screen and (max-width: 930px)
+
+
+@media screen and (max-width: 680px)
+

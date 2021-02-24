@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import axios from 'axios'
 import ReactPaginate from 'react-paginate';
-import styles from "./projectPages.module.css";
+import styles from "./projectPages.module.sass";
 import arrow from "../../img/arrow-2-right-long.png";
 import {dataForTest} from "../../dataForTesting";
 import right_arrow from "../../img/icons/right_arrow.png"
@@ -66,17 +66,17 @@ export default class App extends Component {
             <div>
                 {this.state.postData}
                 <ReactPaginate
-                    previousLabel={<img src={left_arrow} alt=""/>}
-                    nextLabel={<img src={right_arrow} alt=""/>}
+                    previousLabel={<img src={left_arrow} className={"arrow"} alt=""/>}
+                    nextLabel={<img src={right_arrow} className={"arrow"} alt=""/>}
                     breakLabel={"..."}
                     breakClassName={"break-me"}
                     pageCount={this.state.pageCount}
                     marginPagesDisplayed={2}
                     pageRangeDisplayed={5}
                     onPageChange={this.handlePageClick}
-                    containerClassName={styles.pagination}
+                    containerClassName={"pagination"}
                     subContainerClassName={"pages pagination"}
-                    activeClassName={styles.active}/>
+                    activeClassName={"active"}/>
             </div>
 
         )

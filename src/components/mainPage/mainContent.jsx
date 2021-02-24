@@ -1,4 +1,4 @@
-import SimpleSlider from "../sliders/intro_slider";
+import SimpleSlider from "./intro_slider";
 import arrow from "../../img/arrow-2-right-long.png";
 import about_company_images1 from "../../img/Rectangle 8.png";
 import about_company_images2 from "../../img/Rectangle 9.png";
@@ -6,6 +6,8 @@ import MultipleRows from "./our_project_slider";
 import {ContactWithUs} from "./contacts/contact_with_us";
 import call_back from "../../img/call_back.png";
 import styles from "./mainContent.module.sass"
+import {Link} from "react-router-dom";
+import ImageSlider from "./alternativeSlider";
 
 function MainContent() {
     return(
@@ -13,16 +15,18 @@ function MainContent() {
             <section className={styles.intro}>
                 <div className="wrapper">
                     <div className={styles.intro_title}>
-                        <h1 className={"intro_first_title"}>PROJECT </h1>
-                        <h1 className={"intro_second_title"}>PASICHNA</h1>
-                        <div className={"number_style"}>
-                            <h1>01</h1>
-                            <h1 className={"septum_style"}>/</h1>
-                            <h1>03</h1>
+                        <div className={styles.intro_text}>
+                            <h1 className={"intro_first_title"}>PROJECT </h1>
+                            <h1 className={"intro_second_title"}>PASICHNA</h1>
+                            <div className={"number_style"}>
+                                <h1>01</h1>
+                                <h1 className={"septum_style"}>/</h1>
+                                <h1>03</h1>
+                            </div>
                         </div>
-                    </div>
-                    <div className={styles.intro_slider}>
-                        <SimpleSlider/>
+                        <div className={styles.intro_slider}>
+                            <ImageSlider/>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -42,7 +46,7 @@ function MainContent() {
                         </h2>
                         <div className={styles.learn_more}>
                             <h1 className={styles.learn_more_text}>
-                                Learn more
+                                <Link className={"link"} to='/About_Company' >LEARN MORE</Link>
                             </h1>
                             <img src={arrow} alt="learn more"/>
                         </div>
@@ -84,8 +88,11 @@ function MainContent() {
                         <h1 className={styles.our_projects_title}>
                             Our Projects
                         </h1>
-                        <div className={styles.projects_title_all_projects}>
-                            All Projects →
+                        <div className={styles.learn_more} >
+                            <h1 className={styles.learn_more_text}>
+                                <Link className={"link"} to='/Projects'>LEARN MORE</Link>
+                            </h1>
+                            <img src={arrow} alt="learn more"/>
                         </div>
                     </div>
                     <div className={styles.our_projects_slider} title={" Double click to open detail information"}>

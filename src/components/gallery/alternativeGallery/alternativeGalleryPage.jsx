@@ -66,9 +66,9 @@ export default class AlternativeGalleryPage extends Component {
                     marginPagesDisplayed={2}
                     pageRangeDisplayed={5}
                     onPageChange={this.handlePageClick}
-                    containerClassName={styles.pagination}
+                    containerClassName={"pagination"}
                     subContainerClassName={"pages pagination"}
-                    activeClassName={styles.active}/>
+                    activeClassName={"active"}/>
             </>
         )
     }
