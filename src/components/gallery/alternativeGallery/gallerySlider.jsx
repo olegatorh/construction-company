@@ -1,10 +1,10 @@
 import React, {Component} from "react";
 import Slider from "react-slick";
 
-import right_arrow from "../../img/icons/right_arrow.png"
-import left_arrow from "../../img/icons/left_arrow.png"
-import styles from "./galleryPage.module.sass"
-import {dataForTest} from "../../dataForTesting";
+import right_arrow from "../../../img/icons/right_arrow.png"
+import left_arrow from "../../../img/icons/left_arrow.png"
+import styles from "../galleryPage.module.sass"
+import {dataForTest} from "../../../dataForTesting";
 
 
 export default class GallerySlider extends Component {

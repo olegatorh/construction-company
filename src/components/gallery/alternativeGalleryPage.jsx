@@ -1,9 +1,9 @@
 import React, {Component} from 'react'
 import ReactPaginate from 'react-paginate';
-import right_arrow from "../../../img/icons/right_arrow.png"
-import left_arrow from "../../../img/icons/left_arrow.png"
-import {dataForTest} from "../../../dataForTesting";
-import styles from "../galleryPage.module.sass"
+import right_arrow from "../../img/icons/right_arrow.png"
+import left_arrow from "../../img/icons/left_arrow.png"
+import {dataForTest} from "../../dataForTesting";
+import styles from "./galleryPage.module.sass"
 
 
 export default class AlternativeGalleryPage extends Component {

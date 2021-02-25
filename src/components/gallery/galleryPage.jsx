@@ -1,6 +1,6 @@
-import GallerySlider from "./gallerySlider";
+import GallerySlider from "./alternativeGallery/gallerySlider";
 import styles from "./galleryPage.module.sass"
-import AlternativeGalleryPage from "./alternativeGallery/alternativeGalleryPage";
+import AlternativeGalleryPage from "./alternativeGalleryPage";
 
 function Gallery() {
     return (

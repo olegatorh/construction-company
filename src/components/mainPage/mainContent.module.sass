@@ -1,95 +1,135 @@
-.intro
-  padding-top: 50px
-  height: 100vh
+/* intro slider-starts*/
 
-.intro_title
+.mainPage_intro_slider
   display: flex
-  justify-content: space-around
   flex-wrap: wrap
+  justify-content: space-between
+  text-align: center
+  padding-top: 50px
 
-  .intro_text
+  .mainPage_intro_text
     align-self: center
 
-  .slider
-    width: 840px
-    height: 820px
-    max-height: 820px
-    border: 0 !important
-    outline: none
     img
-      width: 840px
-      height: 820px
+    padding: 10px
+
+  .intro_numbers
+    padding-top: 40px
+
+  .image
+    width: 770px
+    height: 800px
+    border-radius: 5px
+
+  .slide
+    opacity: 0
+    transition-duration: 1s
+
+
+  .slide.active
+    opacity: 1
+    transition-duration: 1s
+    transform: scale(1.08)
+
+
+@media screen and (max-width: 1250px)
+  .slider
+    justify-content: center
+    flex-direction: column
+    align-items: center
+  .image
+    padding-top: 40px
+
+/* intro slider-ends */
 
 
 
-
-
-
-
-
+/* about-company starts */
 
 .about_company
   padding-top: 100px
-  height: 100vh
-  max-height: 465px
+  height: 465px
 
-.about_company_title
-  padding-bottom: 20px
-  font-weight: 300
-  font-size: 64px
-  line-height: 64px
+  .about_company_items
+    display: flex
+    flex-direction: row-reverse
 
-  color: #BDBDBD
+  .about_company_part_one
+    display: flex
+    flex-direction: column
 
-.about_Company_text
-  max-width: 400px
+  .about_company_part_two
+    display: flex
+    flex-direction: row
 
-  font-weight: 300
-  font-size: 16px
-  line-height: 25px
-  margin-bottom: 20px
+  .about_company_title
+    padding-bottom: 20px
+    font-weight: 300
+    font-size: 64px
+    line-height: 64px
 
-  color: #000000
+    color: #BDBDBD
 
-.learn_more
-  display: flex
-  flex-wrap: wrap
-  justify-content: flex-end
+  .about_Company_text
+    font-weight: 300
+    font-size: 16px
+    line-height: 25px
 
-.learn_more_text
-  letter-spacing: 0.2em
-  text-transform: uppercase
+    color: #000000
 
+  .learn_more
+    padding-top: 10px
+    display: flex
+    flex-wrap: wrap
+    justify-content: flex-end
 
-.about_company_part_one
-  float: right
-  width: 30%
-
-
-.about_company_part_two
-  float: left
-  width: 70%
-
-
-.learn_more_image
-  margin-right: 30px
+  .learn_more_text
+    letter-spacing: 0.2em
+    text-transform: uppercase
 
 
+
+
+
+  .learn_more_image
+    margin-right: 30px
+    border-radius: 5px
+
+/* about-company ends */
+
+
+
+/* main-tasks starts */
 .main_tasks
   padding-top: 100px
-  height: 100vh
-  max-height: 400px
-
-
+  height: 400px
+  display: flex
 
 .main_tasks_title
+  display: flex
+  align-items: flex-start
   font-weight: 300
   font-size: 64px
   line-height: 64px
   color: rgba(189, 189, 189, 1)
 
+.main_tasks_items
+  display: flex
+  flex-wrap: wrap
+  flex-direction: row
+
+  .main_tasks_second_task
+    display: flex
+    flex-direction: row
+    align-items: center
+
+  .main_tasks_first_task
+    display: flex
+    flex-direction: row
+    align-items: center
 
 .main_tasks_number
+  padding-right: 20px
   font-weight: 900
   font-size: 200px
   line-height: 239px
@@ -107,111 +147,157 @@
   color: #333333
 
 
-.main_tasks_second_task
-  float: right
-  width: 50%
-  display: flex
-  flex-wrap: wrap
-  align-items: center
-  justify-content: space-between
-
-.main_tasks_first_task
-  float: left
-  width: 50%
-  display: flex
-  flex-wrap: wrap
-  align-items: center
-  justify-content: space-between
 
 
 
+/* main-tasks ends */
+
+
+
+
+/* our_projects start */
 .our_projects
   padding-top: 100px
   height: 100vh
   max-height: 600px
 
+  .projects_title
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
 
-.projects_title
-  display: flex
-  justify-content: space-between
-  align-items: flex-end
+  .our_projects_title
+    font-weight: 300
+    font-size: 64px
+    line-height: 64px
+    color: rgba(189, 189, 189, 1)
 
-.projects_title_all_projects
-  font-size: 12px
-  line-height: 12px
-  padding: 15px
-  letter-spacing: 0.2em
-  text-transform: uppercase
-  color: #FFFFFF
-  background: #333333
+  .learn_more
+    display: flex
+    flex-wrap: wrap
+    justify-content: flex-end
 
+  .learn_more_text
+    letter-spacing: 0.2em
+    text-transform: uppercase
 
-.our_projects_title
-  font-weight: 300
-  font-size: 64px
-  line-height: 64px
-  color: rgba(189, 189, 189, 1)
+  .our_projects_slider
+    margin-top: 50px
 
-.our_project_sub_title
-  font-size: 15px
-  color: #333333
-  bottom: 0
+  .our_project_slide:hover
+    .our_project_slide_text
+      display: block
 
+  .our_project_slide
+    position: relative
+    display: block
 
-.our_projects_slider
-  margin-top: 60px
-
-.our_project_slide:hover .our_project_slide_text
-  display: block
-
-
-
-.our_project_slide
-  position: relative
-  display: block
-
-  img
-    padding-right: 15px
-    max-height: 650px
-    max-width: 400px
+    .slider_images
+      padding-right: 15px
+      height: 260px
+      width: 500px
 
 
-.our_project_slide_text
-  display: none
-  position: absolute
-  font-size: 64px
-  line-height: 64px
-  color: rgba(189, 189, 189, 1)
+  .our_project_sub_title
+    font-size: 15px
+    color: #333333
+    bottom: 0
+
+  .our_project_slide_text
+    display: none
+    position: absolute
+    font-size: 64px
+    line-height: 64px
+    color: rgba(189, 189, 189, 1)
+
+@media screen and (max-width: 1200px)
+
+
+
+/* our_projects end */
+
+
+
+/* call_back start */
 
 .call_back
-  margin-top: 100px
-  height: 100vh
-  max-height: 600px
-
-
-.call_back_title
-  font-weight: 300
-  font-size: 64px
-  line-height: 64px
-
-  color: #BDBDBD
-
-
-input
-  width: 391px
-  height: 46px
-  margin-bottom: 15px
-  background: #F3F3F3
-
-
-.call_back_items
-  margin-top: 50px
+  padding-top: 80px
   display: flex
 
+  .call_back_title
+    font-weight: 300
+    font-size: 64px
+    line-height: 64px
 
-@media screen and (max-width: 1202px)
-  .intro_slider
-    width: 100%
+    color: #BDBDBD
+
+  .call_back_items
+    margin-top: 50px
+    display: flex
+    align-items: center
+
+    .callback_image
+      padding-left: 10px
+
+
+.form__label
+  font-family: 'Roboto', sans-serif
+  font-size: 1.2rem
+  margin-left: 2rem
+  margin-top: 0.7rem
+  display: block
+  transition: all 0.3s
+  transform: translateY(0rem)
+
+
+.form__input
+  font-family: 'Roboto', sans-serif
+  color: #333
+  font-size: 1.2rem
+  padding: 1.5rem 2rem
+  border-radius: 0.2rem
+  border: none
+  display: block
+  border-bottom: 0.3rem solid transparent
+  transition: all 0.3s
+
+
+.form__input:placeholder-shown + .form__label
+  opacity: 0
+  visibility: hidden
+  -webkit-transform: translateY(-4rem)
+  transform: translateY(-4rem)
+
+.input_contact_us
+  letter-spacing: 0.2em
+  text-transform: uppercase
+  margin-top: 10px
+  margin-left: 30%
+  color: #333333
+  font-size: 20px
+  line-height: 20px
+  outline: none
+  border: 0
+
+
+
+
+
+
+/* call_back ends */
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1250px)
 
 
 @media screen and (max-width: 930px)
